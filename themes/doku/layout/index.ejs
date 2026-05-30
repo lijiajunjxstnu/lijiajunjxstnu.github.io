@@ -1,0 +1,47 @@
+<% const toc_obj = toc(page.content, {
+    class: 'post-toc',
+    list_number: false,
+}) %>
+
+<article class="doku-document-container clearfix">
+    <header class="hero is-light" id="doku-document-hero">
+        <div class="hero-body">
+            <h1 class="title"><%= page.title || config.title %></h1>
+            <% if (page.description || config.description) { %>
+                <p class="subtitle"><%= page.description || config.description %></p>
+            <% } %>
+        </div>
+    </header>
+    <div class="columns">
+        <div class="column <% if (toc_obj.length > 0) { %>is-9-tablet <% } %>doku-document-wrapper">
+            <div class="content doku-home-content">
+                <% if (page.content) { %>
+                    <%- page.content %>
+                <% } %>
+
+                <h2>最新文章</h2>
+                <div class="post-list">
+                    <% site.posts.sort('date', -1).each(function(post) { %>
+                    <article class="post-list-item">
+                        <a class="post-list-title" href="<%= url_for(post.path) %>"><%= post.title %></a>
+                        <% if (post.description) { %>
+                            <p class="post-list-description"><%= post.description %></p>
+                        <% } %>
+                        <time class="post-list-date" datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'YYYY-MM-DD') %></time>
+                    </article>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        <% if (toc_obj.length > 0) { %>
+        <div class="column is-3 is-narrow-touch is-hidden-mobile">
+            <aside class="doku-document-toc" id="doku-document-toc">
+                <div class="doku-document-toc-content">
+                    <p class="doku-document-toc-title">目录</p>
+                    <%- toc_obj %>
+                </div>
+            </aside>
+        </div>
+        <% } %>
+    </div>
+</article>

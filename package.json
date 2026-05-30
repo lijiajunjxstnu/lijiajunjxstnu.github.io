@@ -1,15 +1,16 @@
 {
-  "name": "hexo-site",
+  "name": "lijiajunjxstnu-blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "new": "hexo new",
     "server": "hexo server"
   },
   "hexo": {
-    "version": ""
+    "version": "8.1.2"
   },
   "dependencies": {
     "hexo": "^8.0.0",
