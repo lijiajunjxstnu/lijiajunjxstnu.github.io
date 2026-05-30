@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<title>SQL语言 - SQL语法基础 | 李佳俊的技术博客</title>
+<meta name="generator" content="Hexo 8.1.2">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="description" content="李佳俊的个人技术博客，分享编程、Web 开发和学习心得">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/theme-doku/img/favicon.ico">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.16.2/styles/github.min.css">
+<link rel="stylesheet" href="/theme-doku/css/doku.css">
+
+</head>
+
+<body>
+    
+
+<nav id="doku-navbar" class="navbar is-spaced has-shadow">
+    <div class="container">
+        <div class="navbar-brand">
+            <!-- burger btn -->
+            <a role="button" class="navbar-burger burger" id="doku-sidebar-toggle">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+            <a class="navbar-item" href="https://lijiajun-it.top">
+                <h1 class="doku-navbar-title">
+                    <img src="/theme-doku/img/logo.png" height="28">
+                    <span class="is-size-4">李佳俊的技术博客</span>
+                </h1>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+                    <a class="navbar-item" href="/">
+                        
+                        
+                            <span>首页</span>
+                        
+                    </a>
+                
+                    <a class="navbar-item" href="/about.html">
+                        
+                        
+                            <span>关于</span>
+                        
+                    </a>
+                
+                <!-- navbar link -->
+                <!--<a class="navbar-item">
+                Home
+            </a>-->
+            </div>
+            <!-- i18n switch -->
+            <div class="navbar-end">
+                <!--<div class="navbar-item">
+                    <div class="dropdown is-right is-hoverable">
+                        <div class="dropdown-trigger">
+                            <button class="button" id="navbar-i18n-btn">
+                                <span class="icon is-small">
+                                    <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                                </span>
+                                <span>Language</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    Dropdown item
+                                </a>
+                                <a class="dropdown-item">
+                                    Other dropdown item
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Active dropdown item
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Other dropdown item
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid">
+        <section class="main-content">
+            
+
+
+<aside class="doku-sidebar" id="doku-sidebar">
+    <div class="doku-sidebar-content">
+        <div class="menu">
+            
+                <ul class="menu-list is-hidden-desktop">
+                    
+                        
+                            <li><a href="/">首页</span></a></li>
+                        
+                    
+                        
+                            <li><a href="/about.html">关于</span></a></li>
+                        
+                    
+                </ul>
+            
+            <hr class="is-hidden-desktop">
+            
+                
+                    
+                        <p class="menu-label">数据库基础和原理</p>
+                        <ul class="menu-list">
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">数据库基础和 SQL 知识体系详解</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">SQL DB - 关系型数据库是如何工作的</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">SQL DB - 关系型数据库设计理论</a></li>
+                            
+                        </ul>
+                    
+                        <p class="menu-label">SQL语言</p>
+                        <ul class="menu-list">
+                            
+                                
+                                <li><a class="is-current" href="/sql-syntax-basic.html">SQL语言 - SQL语法基础</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">SQL语言 - SQL语句练习</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">SQL语言 - SQL题目进阶</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">SQL语言 - SQL语句优化</a></li>
+                            
+                        </ul>
+                    
+                        <p class="menu-label">MySQL</p>
+                        <ul class="menu-list">
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">MySQL - 数据类型</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">MySQL - 存储引擎</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">MySQL - 索引(B+树)</a></li>
+                            
+                                
+                                <li><a  href="/sql-syntax-basic.html">MySQL - 性能优化</a></li>
+                            
+                        </ul>
+                    
+                
+            
+        </div>
+    </div>
+</aside>
+
+            <main class="is-paddingless doku-main-wrapper" id="doku-main">
+                
+
+<article class="doku-document-container clearfix">
+    <header class="hero is-light" id="doku-document-hero">
+        <div class="hero-body">
+            <h1 class="title">SQL语言 - SQL语法基础</h1>
+            
+                <p class="subtitle">按知识点整理 SELECT、DISTINCT、LIMIT、排序和过滤的常用写法。</p>
+            
+            
+                <a href="https://github.com/lijiajunjxstnu/lijiajunjxstnu.github.io/tree/main/source/_posts/sql-syntax-basic.md" target="_blank" rel="external nofollow noreferrer noopener" class="button is-small is-rounded is-black"><span class="icon is-small"><i class="fab fa-github"></i></span><span>在 GitHub 上编辑</span></a>
+            
+        </div>
+    </header>
+    <div class="columns">
+        <div class="column is-9-tablet doku-document-wrapper">
+            <div class="content">
+                <h2 id="SELECT"><a href="#SELECT" class="headerlink" title="SELECT"></a>SELECT</h2><p><code>SELECT</code> 用来从表中取出指定列。真实项目里建议明确列名，避免 <code>SELECT *</code> 带来不必要的数据传输和字段依赖。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, created_at</span><br><span class="line"><span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure>
+
+<h2 id="DISTINCT"><a href="#DISTINCT" class="headerlink" title="DISTINCT"></a>DISTINCT</h2><p>相同值只会出现一次。它作用于所有列，也就是说所有列的值都相同才算相同。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> col1, col2</span><br><span class="line"><span class="keyword">FROM</span> mytable;</span><br></pre></td></tr></table></figure>
+
+<h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="LIMIT"></a>LIMIT</h2><p>限制返回的行数。可以有两个参数，第一个参数为起始行，从 <code>0</code> 开始；第二个参数为返回的总行数。</p>
+<p>返回前 5 行：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> mytable</span><br><span class="line">LIMIT <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+
+<p>另一种等价写法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> mytable</span><br><span class="line">LIMIT <span class="number">0</span>, <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+
+<p>返回第 3 到第 5 行：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> mytable</span><br><span class="line">LIMIT <span class="number">2</span>, <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>使用 <code>ORDER BY</code> 对查询结果排序。<code>ASC</code> 表示升序，<code>DESC</code> 表示降序。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, score</span><br><span class="line"><span class="keyword">FROM</span> users</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> score <span class="keyword">DESC</span>, id <span class="keyword">ASC</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h2><p><code>WHERE</code> 用来筛选行。多个条件可以通过 <code>AND</code>、<code>OR</code> 组合。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, status</span><br><span class="line"><span class="keyword">FROM</span> users</span><br><span class="line"><span class="keyword">WHERE</span> status <span class="operator">=</span> <span class="string">&#x27;active&#x27;</span></span><br><span class="line">  <span class="keyword">AND</span> created_at <span class="operator">&gt;=</span> <span class="string">&#x27;2026-01-01&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h2><p><code>GROUP BY</code> 常和聚合函数一起使用，例如 <code>COUNT</code>、<code>SUM</code>、<code>AVG</code>、<code>MAX</code>、<code>MIN</code>。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> status, <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> total</span><br><span class="line"><span class="keyword">FROM</span> users</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> status;</span><br></pre></td></tr></table></figure>
+
+<h2 id="过滤分组结果"><a href="#过滤分组结果" class="headerlink" title="过滤分组结果"></a>过滤分组结果</h2><p><code>HAVING</code> 用来过滤分组后的结果，<code>WHERE</code> 用来过滤分组前的原始行。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> status, <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> total</span><br><span class="line"><span class="keyword">FROM</span> users</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> status</span><br><span class="line"><span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>记忆方式：<code>WHERE</code> 先过滤行，<code>GROUP BY</code> 再分组，<code>HAVING</code> 最后过滤分组。</p>
+</blockquote>
+
+            </div>
+
+            
+        </div>
+        
+        <div class="column is-3 is-narrow-touch is-hidden-mobile">
+            <aside class="doku-document-toc" id="doku-document-toc">
+                <div class="doku-document-toc-content">
+                    <p class="doku-document-toc-title">目录</p>
+                    <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SELECT"><span class="post-toc-text">SELECT</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#DISTINCT"><span class="post-toc-text">DISTINCT</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#LIMIT"><span class="post-toc-text">LIMIT</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%8E%92%E5%BA%8F"><span class="post-toc-text">排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%87%E6%BB%A4"><span class="post-toc-text">过滤</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%86%E7%BB%84"><span class="post-toc-text">分组</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%87%E6%BB%A4%E5%88%86%E7%BB%84%E7%BB%93%E6%9E%9C"><span class="post-toc-text">过滤分组结果</span></a></li></ol>
+                </div>
+            </aside>
+        </div>
+        
+    </div>
+</article>
+
+                <footer>
+    <div class="doku-footer-container is-clearfix">
+        <div class="doku-footer-item is-pulled-left">&copy; <span id="doku-copyrght-year"></span> <a href="/">李佳俊的技术博客</a></div>
+
+        <div class="doku-footer-item is-pulled-right">Powered by <a href="https://hexo.io" target="_blank" rel="external noopenner nofollow">Hexo</a> & <a href="https://github.com/SukkaW/hexo-theme-doku" target="_blank" rel="external noopenner nofollow">Doku</a></div>
+    </div>
+</footer>
+
+            </main>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/stickyfilljs@2.1.0/dist/stickyfill.min.js"></script>
+    <script src="/theme-doku/js/doku.js"></script>
+</body>
+
+</html>
